@@ -7,5 +7,3 @@ comments: false
 
 [关于代码规范](/gitbook/Test)
 
-[测试部署发布](/gitbook/testPublicHtml)
-
