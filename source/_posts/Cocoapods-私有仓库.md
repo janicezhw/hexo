@@ -16,7 +16,7 @@ Cocoapods仓库分为两类：公共仓库、私有仓库
 
 ### 1、创建 仓库specs项目
 
-![image-20190311150441424](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/newspecsProject.png)
+![image-20190311150441424](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/newspecsProject.png)
 
 添加到repo
 
@@ -27,11 +27,11 @@ pod repo add zwkRepos git@git.dev.tencent.com:jindouyun_wk/ZWKSpecs.git
 需要注意是否有git权限(项目公钥)
 添加成功：
 
-![image-20190311151024393](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190311151024393.png)
+![image-20190311151024393](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190311151024393.png)
 
 ### 2、创建 仓库项目
 
-![image-20190307180231720](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190311144640390.png)
+![image-20190307180231720](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190311144640390.png)
 
 ```
 git clone 项目
@@ -43,7 +43,7 @@ cd 进入项目，初始化创建podspec文件
 pod spec create ZWKCategory
 ```
 
-![image-20190311173138843](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190311173138843.png)
+![image-20190311173138843](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190311173138843.png)
 
 编辑内容， 主要用到的参数。
 

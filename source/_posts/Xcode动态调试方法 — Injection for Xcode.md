@@ -11,7 +11,7 @@ tags:
 
 ### 安装Injection
 App Store下载安装Injection，安装完成后打开应用
-![](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/E6979875-556C-4BBA-AE09-4C4A4ECCAD2B.png)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/E6979875-556C-4BBA-AE09-4C4A4ECCAD2B.png)
 
 ### Xcode工程配置动态调试
 Xcode打开项目工程

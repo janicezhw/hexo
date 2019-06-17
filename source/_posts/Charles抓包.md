@@ -32,19 +32,20 @@ iPhone连接同一个网络，并设置手动代理
 ### 首先Mac电脑上安装Charles CA证书
 首先我们需要在 Mac 电脑上安装证书。点击 Charles 的顶部菜单，选择 “Help” -> “SSL Proxying” -> “Install Charles Root Certificate”
 Mac的kechain 将会添加一个Charles Proxy CA证书，通常这时候证书会显示为不受信任，双击证书，如下操作信任证书
-![-w350](http://pr2qnzw6t.bkt.clouddn.com/15595433607741.jpg)
+![-w350](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15595433607741.jpg)
+
 
 ### iPhone上安装Charles描述文件
-如果我们需要在 iOS 或 Android 机器上截取 Https 协议的通讯内容，还需要在手机上安装相应的证书。点击 Charles 的顶部菜单，选择 “Help”__ -> “SSL Proxying” -> “Install Charles Root Certificate on a Mobile Device or Remote Browser”，然后就可以看到 Charles 弹出的简单的安装教程![](http://pr2qnzw6t.bkt.clouddn.com/15595433914976.jpg)
+如果我们需要在 iOS 或 Android 机器上截取 Https 协议的通讯内容，还需要在手机上安装相应的证书。点击 Charles 的顶部菜单，选择 “Help”__ -> “SSL Proxying” -> “Install Charles Root Certificate on a Mobile Device or Remote Browser”，然后就可以看到 Charles 弹出的简单的安装教程![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15595433914976.jpg)
 安装描述文件
-![](http://pr2qnzw6t.bkt.clouddn.com/15595434048643.jpg)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15595434048643.jpg)
 
 
 备注：在iOS10+系统，会需要信任证书：iPhone “设置”-“关于本机”-“证书信任设置”，信任Charles证书。
 
 ### 截取对应域名的Https通讯信息
 Charles 默认并不截取 Https 网络通讯的信息，如果你想对截取某个网站上的所有 Https 网络请求，可以相应域名 右键“启用SSL代理”
-![](http://pr2qnzw6t.bkt.clouddn.com/15595434132822.jpg)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15595434132822.jpg)
 
 
 > 参考文章：

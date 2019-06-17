@@ -197,25 +197,25 @@ http://localhost:8080/reload //重新加载
 
 ```
 
-![img](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/1212454-682a0b9af82d7eee.png)
+![img](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/1212454-682a0b9af82d7eee.png)
 
-![img](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/1212454-61e6a345d4a73da4.png)
+![img](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/1212454-61e6a345d4a73da4.png)
 
 ### 新建任务：
 
 选择自由风格
 
-![](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190124152717237.png)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190124152717237.png)
 
 如果构建代码是通过git获取，需要先设置git 密码或者SSH,
 
 **Source code** > git
 
-![](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190124153158039.png)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190124153158039.png)
 
-![](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190124153216719.png)
+![](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190124153216719.png)
 
-![image-20190313155007480](http://pr2qnzw6t.bkt.clouddn.com/image/markdown/image-20190124153306761.png)
+![image-20190313155007480](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/image-20190124153306761.png)
 
 **Build** > 执行shell
 
