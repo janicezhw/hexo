@@ -182,3 +182,51 @@ flex布局小游戏：https://flexboxfroggy.com/
 http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
 https://www.w3schools.com/css/css_grid.asp
 https://codepip.com/games/grid-garden/#zh-cn
+
+
+
+
+
+js中函数的定义
+参考：https://juejin.im/post/5aa1eb056fb9a028b77a66fd
+```
+function test(name) {  //声明式写法
+    console.log(name)
+}
+test('Jerry')
+
+let test2 = function(name) {  //赋值式写法
+    console.log(name)
+}
+test2('Tom')
+```
+
+箭头函数写法
+
+```
+const test = (name) => {
+    console.log(name)
+}
+test('Jerry')
+```
+
+对象中函数的调用：
+关于this指向问题：
+```
+const obj = {
+	a: function() { console.log(this) }    
+}
+obj.a()  //打出的是obj对象
+```
+
+```
+const obj = {
+    a: () => {
+        console.log(this)
+    }
+}
+obj.a()  //打出来的是window
+```
+
+
+
