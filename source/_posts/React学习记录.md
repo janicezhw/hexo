@@ -5,9 +5,11 @@ tags:
 ---
 
 前端框架：
-React - facebook
-Angular - Google
+React - facebook - ReactDOM , jsx
+Angular - Google - TypeScript
 Vue - 尤雨溪
+
+<!-- more -->
 
 React 
 用于构建前端UI组件 Component
@@ -69,7 +71,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 > chrome扩展 react devTools
 
 属性传递： 只能从上往下一级一级传递
-![-w592](media/15617106547263.jpg)
+![-w592](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15617106547263.jpg)
 
 // React class关键字-> className ; onclick -> onClick
 
@@ -209,7 +211,7 @@ npm run build
 
 ## 状态管理器:Redux
 React 只能逐级传递，不灵活。 Redux集中存储状态store
-![-w972](media/15619662970063.jpg)
+![-w972](https://dev.tencent.com/u/jindouyun_wk/p/MarkdownImages/git/raw/master/15619662970063.jpg)
 
 ### 安装Redux和调试工具
 
