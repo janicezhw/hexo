@@ -61,24 +61,44 @@ $ systemctl stop firewalld
 ```
 
 ### 安装shadowsocks
+> ***2019-10-16 更新***
+> vulter 现在创建 CentOS系统 为CentOS 8, 默认环境有一些变化，后续步骤与之前不太一样，整理如下：
+CentOS 8 系统默认python环境为python3，
 
 * 查看python 环境
 
 ```
-$ python --version
+$ python3 --version
 ```
 如果有显示版本号，则说明Vultr的CentOS 已经有python环境，则我们通过python安装shadowsocks。
 
 * 安装pip
 
 ```
-$ yum install m2crypto python-setuptools
-$ easy_install pip
+$ yum install python3-pip
 ```
 
 * 安装shadowsocks
 
 ```
+$ pip3 install shadowsocks
+```
+
+
+
+> **旧版本 centOS 7**
+> * 查看python 环境
+> ```
+$ python --version
+```
+> 如果有显示版本号，则说明Vultr的CentOS 已经有python环境，则我们通过python安装shadowsocks。
+> * 安装pip
+> ```
+$ yum install m2crypto python-setuptools
+$ easy_install pip
+```
+> * 安装shadowsocks
+> ```
 $ pip install shadowsocks
 ```
 
@@ -88,7 +108,7 @@ $ pip install shadowsocks
 ```
 $ vi /etc/shadowsocks.json
 ```
-按照格式输入一下内容："server"需要替换服务器ip，"server_port"端口也可以更换，"password"设置密码，然后 :wp保存并退出
+按照格式输入一下内容："server"需要替换服务器ip，"server_port"端口也可以更换，"password"设置密码(不能使用默认密码，后面步骤会报错)，然后 :wp保存并退出
 ```
 {
     "server":"my_server_ip",
@@ -128,6 +148,10 @@ $ ssserver -c /etc/shadowsocks.json -d start    // 启动
 $ ssserver -c /etc/shadowsocks.json -d stop     // 停止
 $ ssserver -c /etc/shadowsocks.json -d restart  // 重启
 ```
+> 如遇到 shadowsocks 启动报错：
+> undefined symbol: EVP_CIPHER_CTX_cleanup
+> 
+> xxx/site-packages/shadowsocks/crypto/openssl.py 路径  vim  修改里面的cleanup ->reset
 
 * 防火墙添加shadowsocks端口
 
@@ -140,6 +164,10 @@ $ firewall-cmd --add-port=8388/tcp --permanent
 * 安装supervisor
 
 ```
+<!--CentOS 8-->
+$ pip3 install supervisor 
+
+<!--CentOS 7-->
 $ easy_install supervisor
 ```
 
@@ -166,6 +194,10 @@ autorestart=true
 ```
 $ vi /etc/rc.local
 ```
+在文件末尾加上：
+```
+supervisord -c /etc/supervisord.conf
+```
 
 * 修改权限
 
@@ -175,6 +207,8 @@ $ chmod 777 /etc/rc.local
 这样ss开启自动后台运行就配置好了，服务器重启就会自启动ss服务。
 
 ### 安装BBR（可选）
+* CentOS 8 默认已经安装BBR, `lsmod | grep bbr` 验证 
+
 > BBR是来自于Google的黑科技，目的是通过优化和控制TCP的拥塞，充分利用带宽并降低延迟，起到神奇般的加速效果。 在BBR之前，比较有名的就是国产的锐速了，不过，锐速是个国产的闭源软件，而BBR则是Google开源软件。
 
 执行下面命令安装谷歌BBR：
